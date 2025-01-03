@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Фон прогрес-бара -->
+    <item android:id="@android:id/background">
+        <shape android:shape="ring" android:useLevel="false">
+            <size
+                android:width="8dp"
+                android:height="8dp" />
+            <solid android:color="#D3D3D3" /> <!-- Сірий фон -->
+        </shape>
+    </item>
+
+    <!-- Активний прогрес -->
+    <item android:id="@android:id/progress">
+        <shape android:shape="ring">
+            <size
+                android:width="8dp"
+                android:height="8dp" />
+            <gradient
+                android:angle="0"
+                android:endColor="@color/progress_end"
+            android:startColor="@color/progress_start"
+            android:type="linear" /><!-- Колір прогресу -->
+        </shape>
+    </item>
+</layer-list>

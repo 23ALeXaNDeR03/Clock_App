@@ -1,0 +1,29 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.ClockApp" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+
+    </style>
+
+    <style name="Theme.ClockApp" parent="Base.Theme.ClockApp" />
+
+    <style name="Theme.ClockApp.Splash" parent="Theme.Material3.DayNight.NoActionBar" >
+        <item name="android:windowBackground">@color/ic_launcher_background</item>
+    </style>
+
+    <style name="SpinnerItemStyle">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:background">#6750a4</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:padding">14dp</item>
+    </style>
+
+<!--    <style name="CustomSpinnerStyle" parent="@android:style/Widget.Material.Spinner">-->
+<!--        <item name="android:dropDownHeight">100dp</item> &lt;!&ndash; Висота списку &ndash;&gt;-->
+<!--        <item name="android:popupBackground">#6750a4</item> &lt;!&ndash; Фон списку &ndash;&gt;-->
+<!--        <item name="android:textColor">@android:color/white</item> &lt;!&ndash; Колір тексту &ndash;&gt;-->
+<!--    </style>-->
+
+
+</resources>

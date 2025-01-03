@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="16dp"
+    android:background="@color/background_light">
+
+    <!-- Відображення часу -->
+    <TextView
+        android:id="@+id/time_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="00:00:00"
+        android:textSize="48sp"
+        android:textColor="@color/text_dark"
+        android:fontFamily="sans-serif"
+        android:padding="16dp"/>
+
+    <!-- Відображення дати -->
+    <TextView
+        android:id="@+id/date_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="01 Jan 2024"
+        android:textSize="24sp"
+        android:textColor="@color/text_dark"
+        android:padding="8dp"/>
+
+    <!-- Відображення часового поясу -->
+    <TextView
+        android:id="@+id/timezone_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Time Zone: UTC"
+        android:textSize="16sp"
+        android:textColor="@color/text_secondary"
+        android:padding="8dp"/>
+
+    <!-- Відображення року -->
+    <TextView
+        android:id="@+id/year_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Year: 2024"
+        android:textSize="16sp"
+        android:textColor="@color/text_secondary"
+        android:padding="8dp"/>
+
+    <!-- Кнопка для переходу на екран таймера -->
+    <Button
+        android:id="@+id/timer_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Go to Timer"
+        android:background="#6750a4"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        android:layout_marginTop="16dp"/>
+
+    <!-- Кнопка для переходу на екран налаштувань -->
+    <Button
+        android:id="@+id/settings_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Go to Settings"
+        android:background="#6750a4"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        android:layout_marginTop="16dp"/>
+</LinearLayout>

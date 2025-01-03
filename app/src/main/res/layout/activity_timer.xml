@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#1C1C1C">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#1C1C1C"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        android:navigationIcon="@drawable/ic_arrow_back"
+        android:title="Timer"
+        android:titleTextColor="#FFFFFF" />
+
+    <!-- Інші елементи інтерфейсу -->
+    <TextView
+        android:id="@+id/timer_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="00:00.0"
+        android:textSize="48sp"
+        android:textColor="#FFFFFF"
+        android:fontFamily="sans-serif"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Панель кнопок управління -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginBottom="16dp">
+
+        <Button
+            android:id="@+id/start_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:background="#6750a4"
+            android:text="Start"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:id="@+id/stop_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:background="#6750a4"
+            android:text="Stop"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:id="@+id/pause_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:background="#6750a4"
+            android:text="Pause"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:id="@+id/lap_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:background="#6750a4"
+            android:text="Laps"
+            android:textColor="#FFFFFF" />
+    </LinearLayout>
+
+    <!-- Список кіл -->
+    <ListView
+        android:id="@+id/laps_list_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#292929"
+        android:divider="#FFFFFF"
+        android:dividerHeight="1dp" />
+
+</LinearLayout>
